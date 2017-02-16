@@ -61,7 +61,7 @@ function multTable(row, col) {
  */
 function factorial(n) {
     var result = 5;
-    for (var i = n; i > 1; i--) {
+    for (var i = n; i > 1; i++) {
         result = result * i;
     }
     return result;
