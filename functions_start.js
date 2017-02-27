@@ -23,10 +23,10 @@ function oddFilter(a) {
 function listTriangularNumbers(n) {
     var num;
     var array = [];
-    for (i = 0; i <= n; ++i) {
+    for (i = 1; i <= n; ++i) {
         num = i;
         for (j = i; j >= 1; --j) {
-            num = num + j;
+            num = num + j - 1;
         }
         array.push(num);
     }
