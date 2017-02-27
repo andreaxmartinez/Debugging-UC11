@@ -23,9 +23,9 @@ function oddFilter(a) {
 function listTriangularNumbers(n) {
     var num;
     var array = [];
-    for (i = 0; i <= n; ++i) {
+    for (i = 0; i <= n; i++) {
         num = i;
-        for (j = i; j >= 1; --j) {
+        for (j = i-1; j >= 1; j--) {
             num = num + j;
         }
         array.push(num);
@@ -42,7 +42,7 @@ function listTriangularNumbers(n) {
 function multTable(row, col) {
     var table = "<table>";
     var x;
-    for (var i = 1; i < col; ++i) {
+    for (var i = 1; i <== col; ++i) {
         table = table + "<tr>";
         for (var j = 1; j < row; ++j) {
             x = i * j;
