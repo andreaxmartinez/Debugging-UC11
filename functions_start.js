@@ -23,10 +23,17 @@ function oddFilter(a) {
 function listTriangularNumbers(n) {
     var num;
     var array = [];
+<<<<<<< HEAD
     for (i = 0; i <= n; i++) {
         num = i;
         for (j = i - 1; j >= 1; j--) {
             num = num + j;
+=======
+    for (i = 1; i <= n; ++i) {
+        num = i;
+        for (j = i; j >= 1; --j) {
+            num = num + j - 1;
+>>>>>>> orgin/master
         }
         array.push(num);
     }
@@ -60,8 +67,8 @@ function multTable(row, col) {
  * @returns {number}
  */
 function factorial(n) {
-    var result = 0;
-    for (var i = n; i > 1; i--) {
+    var result = n;
+    for (var i = 1; i < n; i++) {
         result = result * i;
     }
     return result;
@@ -75,7 +82,7 @@ function factorial(n) {
  */
 function combinations(n, k) {
     var c;
-    c = factorial(n) / factorial(k) * (factorial(n - k));
+    c = factorial(n) / (factorial(k) * (factorial(n - k)));
     return c;
 }
 
